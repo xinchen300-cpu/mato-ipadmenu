@@ -39,6 +39,8 @@ drop policy if exists "menu_document is publiek leesbaar" on public.menu_documen
 create policy "menu_document is publiek leesbaar" on public.menu_document
   for select to anon, authenticated using (true);
 revoke insert, update, delete, truncate on public.menu_document from anon, authenticated;
+-- Nodig in projecten die nieuwe tabellen niet automatisch openzetten voor de API (zoals vendly).
+grant select on public.menu_document to anon, authenticated;
 
 create or replace function menu_private.token_hash(p_token text) returns text
 language sql immutable set search_path = '' as $$
