@@ -1,0 +1,13 @@
+{
+  "name": "automaat-menu",
+  "version": "1.0.0",
+  "description": "Digitaal menu voor een verkoopautomaat: beheer op de computer, weergave op een iPad",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

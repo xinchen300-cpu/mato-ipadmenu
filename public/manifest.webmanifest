@@ -1,0 +1,9 @@
+{
+  "name": "Automaat Menu",
+  "short_name": "Automaat",
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#f6f4ef",
+  "theme_color": "#23201b"
+}
